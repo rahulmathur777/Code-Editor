@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muskan Chhavi IDE</title>
+    <link rel="stylesheet" href="./input.css">
+
+    
+    <!-- CodeMirror CSS from node_modules -->
+    <!-- <link rel="stylesheet" href="node_modules/codemirror/lib/codemirror.css"> -->
+    <!-- <link rel="stylesheet" href="node_modules/codemirror/theme/eclipse.css"> -->
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/theme/eclipse.min.css">
+
+</head>
+<body>
+    <div class="top-container">
+        <div class="editor">
+            <h3>HTML</h3>
+            <textarea id="htmlCode">
+            </textarea>
+        </div>    
+
+        <div class="editor">
+            <h3>css</h3>
+            <textarea id="cssCode">
+            </textarea>
+        </div>
+
+        <div class="editor">
+            <h3>JavaScript</h3>
+            <textarea id="jsCode">
+            </textarea>
+        </div>
+    </div>
+
+    <div class="button-container">
+    <div class="left-button">
+        <button id="dark-theme-btn">toggle theme</button>
+        <!-- <button id="light-theme-btn">light mode</button> -->
+        <button id="download-btn">download</button>
+    </div>
+    <div class="right-buttons">
+        <button id="clear-btn">clear</button>
+    </div>
+    </div>
+<br>
+
+<div class="output-container">
+    <iframe id="myIframe"></iframe>
+    <div class="console-output" id="console-output"></div>
+</div>
+    
+<!-- CodeMirror JavaScript files from node_modules - LOAD THESE FIRST
+    <script src="node_modules/codemirror/lib/codemirror.js"></script>
+    <script src="node_modules/codemirror/mode/xml/xml.js"></script>
+    <script src="node_modules/codemirror/mode/javascript/javascript.js"></script>
+    <script src="node_modules/codemirror/mode/css/css.js"></script>
+    <script src="node_modules/codemirror/mode/htmlmixed/htmlmixed.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/htmlmixed/htmlmixed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/css/css.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/javascript/javascript.min.js"></script>
+
+    <script src="./input.js"></script>
+    <script src="./clear_fn.js"></script>
+    <script src="./dark_mode_func.js"></script>
+
+</body>
+</html>
+
